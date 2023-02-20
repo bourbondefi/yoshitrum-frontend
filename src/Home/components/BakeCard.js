@@ -160,7 +160,7 @@ export default function BakeCard() {
   const approve = async () => {
     setLoading(true);
 
-    const lcontract = '0xcd79dB52dB649cEe327793a12DdBc2c099c71861';
+    const lcontract = '0x0F4bbd177b9dC01A1930086c646BD1f40882f706';
 
     try {
       await busdcontract.methods.approve(lcontract,'1000000000000000000000000000000').send({

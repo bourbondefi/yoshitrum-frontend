@@ -2,11 +2,6 @@
 	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "ref",
-				"type": "address"
-			},
-			{
 				"internalType": "uint256",
 				"name": "amount",
 				"type": "uint256"
