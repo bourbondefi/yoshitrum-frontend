@@ -395,7 +395,7 @@ export default function ChefCard() {
         <Divider />
         <Grid item flexGrow={3} marginTop={3}>
         <Typography variant="h5" borderBottom="6px solid" paddingBottom={1}>
-          Restaurants
+          Yoshi Islands
         </Typography>
         <Typography variant="h6" align="center" paddingBottom={2}>
           Island 1
