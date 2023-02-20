@@ -32,6 +32,21 @@ export default function Header() {
     <Wrapper>
       <img src={logo} alt="" width={"100%"} style={{ marginTop: -48 }} />
       <Connect responsive={false} />
+      <ButtonContainer container>
+        <Grid item flexGrow={1} marginRight={1} marginTop={3} alignItems="center">
+          <Button
+            variant="contained"
+            color="secondary"
+            fullWidth
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0xF50254b7a167b3E5547E8A7A5af9f75A32A4bD01&chainId=42161';
+              }}
+              >
+                  BUY YOSHITRUM
+            </Button>
+        </Grid>
+      </ButtonContainer>
     </Wrapper>
   );
 }
