@@ -46,6 +46,19 @@ export default function Header() {
                   BUY YOSHITRUM
             </Button>
         </Grid>
+        <Grid item flexGrow={1} marginRight={1} marginTop={3} alignItems="center">
+          <Button
+            variant="contained"
+            color="secondary"
+            fullWidth
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='https://telegra.ph/Yoshitrum-02-20';
+              }}
+              >
+                  LitePaper
+            </Button>
+        </Grid>
       </ButtonContainer>
     </Wrapper>
   );
