@@ -212,7 +212,7 @@ export default function BakeCard() {
           alignItems="center"
           mt={3}
         >
-          <Typography variant="body1">Total Chefs</Typography>
+          <Typography variant="body1">Total Yoshis</Typography>
           <Typography variant="h5">{walletBalance.users}</Typography>
         </Grid>
       <Grid
