@@ -40,7 +40,7 @@ export default function Header() {
             fullWidth
             onClick={(e) => {
               e.preventDefault();
-              window.location.href='https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0xF50254b7a167b3E5547E8A7A5af9f75A32A4bD01&chainId=42161';
+              window.location.href='https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x43FAbC45Cb99BDd33b1e74F534009D45a062EdFF&chainId=42161';
               }}
               >
                   BUY YOSHITRUM
