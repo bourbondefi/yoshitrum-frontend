@@ -319,6 +319,9 @@ export default function ChefCard() {
     setLoading(false);
   };
 
+  const basketfull = Math.trunc(((walletBalance.currentTime - walletBalance.timestamp) / 86400) * 100);
+  const basketmeter = basketfull > 100 ? 100 : basketfull;
+
   return (
     <CardWrapper>
       {loading && <LinearProgress color="secondary" />}
@@ -357,7 +360,7 @@ export default function ChefCard() {
           mt={3}
         >
           <Typography variant="body1">Money Basket</Typography>
-          <Typography variant="h5">{Math.trunc(((walletBalance.currentTime - walletBalance.timestamp) / 86400) * 100)}% Full</Typography>
+          <Typography variant="h5">{basketmeter}% Full</Typography>
         </Grid>
         <Box paddingTop={4} paddingBottom={3}>
           <Divider />
@@ -371,17 +374,6 @@ export default function ChefCard() {
                 onClick={eatBeans}
               >
                 WITHDRAW MONEY
-              </Button>
-            </Grid>
-            <Grid item flexGrow={3} marginTop={3}>
-              <Button
-                variant="contained"
-                color="secondary"
-                fullWidth
-                disabled={wrongNetwork || !address || loading}
-                onClick={sellTower}
-              >
-                Sell Islands
               </Button>
             </Grid>
           </ButtonContainer>

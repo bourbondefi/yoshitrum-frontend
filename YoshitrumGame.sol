@@ -82,16 +82,6 @@ contract YoshitrumGame {
         towers[user].yield += getYield(floorId, chefs);
     }
 
-    function sellTower() public {
-        collectMoney();
-        address user = msg.sender;
-        uint8[8] memory chefs = towers[user].chefs;
-        totalChefs -= chefs[0] + chefs[1] + chefs[2] + chefs[3] + chefs[4] + chefs[5] + chefs[6] + chefs[7];
-        towers[user].money += towers[user].yield * 24 * 14;
-        towers[user].chefs = [0, 0, 0, 0, 0, 0, 0, 0];
-        towers[user].yield = 0;
-    }
-
     function getChefs(address addr) public view returns (uint8[8] memory) {
         return towers[addr].chefs;
     }
