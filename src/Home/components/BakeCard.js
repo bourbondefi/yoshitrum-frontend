@@ -81,21 +81,21 @@ export default function BakeCard() {
         .totalTowers()
         .call()
         .catch((err) => {
-          console.error("myminers", err);
+          console.error("totaltowers", err);
           return 0;
         }),
         contract.methods
         .totalChefs()
         .call()
         .catch((err) => {
-          console.error("myminers", err);
+          console.error("totalchefs", err);
           return 0;
         }),
         contract.methods
           .towers(address)
           .call()
           .catch((err) => {
-            console.error("myminers", err);
+            console.error("towers", err);
             return 0;
           }),
         getBusdApproved(address),

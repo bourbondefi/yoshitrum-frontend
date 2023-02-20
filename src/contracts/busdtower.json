@@ -53,13 +53,6 @@
 	},
 	{
 		"inputs": [],
-		"name": "sellTower",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "totalChefs",
 		"outputs": [
 			{
@@ -135,21 +128,6 @@
 			{
 				"internalType": "uint256",
 				"name": "hrs",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "ref",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "refs",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "refDeps",
 				"type": "uint256"
 			}
 		],
